@@ -180,7 +180,7 @@ for t = 1:length(trial_cond)
     Screen('Flip', Window);
     WaitSecs(fix_isi(t))
     
- if  sum(strcmp(keys(1), {'1' '2'})) < 1
+ if  sum(strcmp(keys(1), {'2' '3'})) < 1
         
         Screen('DrawTexture', Window, uhoh);
         Screen('Flip', Window);  
@@ -190,10 +190,10 @@ for t = 1:length(trial_cond)
         WaitSecs(feedback_time)
  else
     if trial_cond(t) == 1
-        if strcmp(keys(1),'1')
+        if strcmp(keys(1),'2')
             disp_card = Shuffle(low_cards);
             disp_card = disp_card(1);
-        elseif strcmp(keys(1), '2')
+        elseif strcmp(keys(1), '3')
             disp_card = Shuffle(high_cards);
             disp_card = disp_card(1);
         end
@@ -205,10 +205,10 @@ for t = 1:length(trial_cond)
         Screen('Flip', Window);
         WaitSecs(feedback_time)
     elseif trial_cond(t) == 2
-        if strcmp(keys(1),'1')
+        if strcmp(keys(1),'2')
             disp_card = Shuffle(high_cards);
             disp_card = disp_card(1);
-        elseif strcmp(keys(1), '2')
+        elseif strcmp(keys(1), '3')
             disp_card = Shuffle(low_cards);
             disp_card = disp_card(1);
         end
@@ -219,10 +219,10 @@ for t = 1:length(trial_cond)
         Screen('Flip', Window);
         WaitSecs(feedback_time)
     elseif trial_cond(t) == 3
-        if strcmp(keys(1),'1')
+        if strcmp(keys(1),'2')
             disp_card = Shuffle(low_cards);
             disp_card = disp_card(1);
-        elseif strcmp(keys(1), '2')
+        elseif strcmp(keys(1), '3')
             disp_card = Shuffle(high_cards);
             disp_card = disp_card(1);
         end
@@ -233,10 +233,10 @@ for t = 1:length(trial_cond)
         Screen('Flip', Window);
         WaitSecs(feedback_time)
     elseif trial_cond(t) == 4
-        if strcmp(keys(1),'1')
+        if strcmp(keys(1),'2')
             disp_card = Shuffle(high_cards);
             disp_card = disp_card(1);
-        elseif strcmp(keys(1), '2')
+        elseif strcmp(keys(1), '3')
             disp_card = Shuffle(low_cards);
             disp_card = disp_card(1);
         end
